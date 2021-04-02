@@ -7,10 +7,10 @@
 
 # 소개
 ## 이화용
- - # Contact :]
-    - Email
+- # Contact :]
+ - Email
         dlghkdyd500@gmail.com
-    - GitHub
+ - GitHub
         https://github.com/leehwayong95
 ## GitHub Stats
 
