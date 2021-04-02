@@ -20,7 +20,7 @@
             <img src="https://github-readme-stats.vercel.app/api?username=leehwayong95&show_icons=true&theme=radical&hide_border=true" style="width: 100%"/>
         </td>
         <td width=50%>
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=leehwayong95&layout=compact" style="width: 100%"/>
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=leehwayong95&layout=compact&theme=radical&hide_border=true" style="width: 100%"/>
         </td>
     </tr>
 </table>
