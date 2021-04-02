@@ -31,12 +31,13 @@
  - JavaScript
  - Arduino C
 # 💻Project
-#### 제주더큰내일센터 : 추천 장소 웹 프로젝트
+#### 제주더큰내일센터 - 프로젝트형 인턴십 : 추천 장소 웹 프로젝트
  - [Back-End (Spring)](https://github.com/leehwayong95/mobilpack_admin_service_Spring)
  - [UserClient (Vue.js)](https://github.com/leehwayong95/mobilpack_UserClient)
  - [AdminClient (Vue.js)](https://github.com/leehwayong95/mobilpack_admin_service_Vue)
 
 Front-End, Back-End 모두 기능별로 맡아 2분과 함께 협업 진행하였습니다.
+[성훈님](https://github.com/Seonghun-dytsun) [요한님](https://github.com/yohan-kang) 감사드립니다.
 
 #### 한이음 프로젝트 : 스마트 방석을 이용한 자세교정 디바이스
 
