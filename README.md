@@ -1,16 +1,19 @@
 ![](https://media.giphy.com/media/YFkpsHWCsNUUo/giphy.gif)
 ### 개발중 😇
+
 <br/>
 <br/>
 <br/>
+
 # 소개
 #### 이화용
  - # Contact :]
-    - Email :]
+    - Email
         dlghkdyd500@gmail.com
-    - GitHub :]
+    - GitHub
         https://github.com/leehwayong95
 ## GitHub Stats
+
 <table>
     <tr>
         <td width=50%>
@@ -21,6 +24,7 @@
         </td>
     </tr>
 </table>
+
 # Language
  - C++
  - Java
