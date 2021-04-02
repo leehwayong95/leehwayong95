@@ -15,7 +15,7 @@
 ## GitHub Stats
 
 <table>
-    <tr>
+    <tr style="align-items: center;">
         <td width=50%>
             <img src="https://github-readme-stats.vercel.app/api?username=leehwayong95&show_icons=true&theme=radical&hide_border=true" style="width: 100%"/>
         </td>
