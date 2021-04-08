@@ -41,6 +41,7 @@
  - [ERD Cloud](https://www.erdcloud.com/d/avikeHgaei4HNhADD)
 
 Front-End, Back-End 모두 기능별로 맡아 2분과 함께 협업 진행하였습니다.
+
 팀 멤버 : [성훈님](https://github.com/Seonghun-dytsun) [요한님](https://github.com/yohan-kang)
 
 #### 한이음 프로젝트 : 스마트 방석을 이용한 자세교정 디바이스
@@ -52,6 +53,7 @@ Front-End, Back-End 모두 기능별로 맡아 2분과 함께 협업 진행하�
 2019 한이음 프로젝트로 만나게되어 
 3명이서 협업하여 프로젝트를 진행하였습니다.
 2019 한이음 경진대회에서 입상한 프로젝트입니다.
+
 팀 멤버 : [곽용준](), [백유정](), [홍경표]()
 
 
