@@ -12,12 +12,12 @@
 
 ## AOP 의 주요 개념
 
-- **Aspect : ** 위에서 설명한 흩어진 관심사를 모듈화 한 것.
-- **Target : Aspect**를 적용하는 곳 (Class, Method.. 등등)
-- **Advice : **실질적으로 해야할 일에 대한 것, 실질적인 부가기능을 담은 구현체
-- **JointPoint : Advice**가 적용될 위치로 끼어들 수 있는 지점을 뜻한다. 
+- **Aspect** :위에서 설명한 흩어진 관심사를 모듈화 한 것.
+- **Target** : **Aspect**를 적용하는 곳 (Class, Method.. 등등)
+- **Advice** : 실질적으로 해야할 일에 대한 것, 실질적인 부가기능을 담은 구현체
+- **JointPoint** : **Advice**가 적용될 위치로 끼어들 수 있는 지점을 뜻한다. 
   (ex : 메서드 진입지점, 생성자 호출지점...)
-- **PointCut : JointPoint**의 상세항 스펙을 정의한 것. 구체적으로 **Advice**가 실행될 지점을 정할 수 있음.
+- **PointCut** : **JointPoint**의 상세항 스펙을 정의한 것. 구체적으로 **Advice**가 실행될 지점을 정할 수 있음.
 
 ## 스프링 AOP 특징
 
