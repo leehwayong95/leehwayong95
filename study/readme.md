@@ -3,7 +3,7 @@
 ## Spring
 
    - Annotation
-      - [@Async](study/%40Async-Annotation.md)
+      - [@Async](%40Async-Annotation.md)
    - [Spring Security]()
 ## Vue.js
    - JavaScript
