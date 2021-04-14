@@ -4,7 +4,7 @@
 
 
 
-[개인공부](study/readme.md)
+## [개인공부](study/readme.md)
 
 <br/>
 <br/><br/>
@@ -13,7 +13,7 @@
 
 # 이화용(LeeHwayong)
 ## Contact :]
- - Email
+ - Emailan
         dlghkdyd500@gmail.com
  - GitHub
         https://github.com/leehwayong95
@@ -59,7 +59,7 @@ Front-End, Back-End 모두 기능별로 맡아 2분과 함께 협업 진행하�
 3명이서 협업하여 프로젝트를 진행하였습니다.
 2019 한이음 경진대회에서 입상한 프로젝트입니다.
 
-팀 멤버 : [곽용준](), [백유정](), [홍경표]()
+팀 멤버 : [곽용준](https://github.com/yongJoon1638), [백유정](https://github.com/BAEKYUJEONG), [홍경표](https://github.com/kyungpyoda)
 
 
 # :trophy: 활동
