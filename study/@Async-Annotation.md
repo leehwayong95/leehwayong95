@@ -14,7 +14,7 @@ Spring에는 다양한 어노테이션이 존재하는데요.
 
 병렬 프로그래밍을 위해 만들어진 어노테이션.
 
-먼저 Async를 사용하기 위해선 **" @EnableAsync "**를 선언해야한다.
+먼저 Async를 사용하기 위해선 **@EnableAsync**를 선언해야한다.
 스프링의 Async는 **AOP**에 의해 동작한다.
 
 > #### AOP : Aspect Oriented Programming
@@ -59,14 +59,14 @@ springframework.aop.interceptor 패키지에 도달하며 'doSubmit' 메서드�
  * ### void Return Value
 
    비동기로 처리 해야하는 메서드가 처리 결과를 전달할 필요가 없는경우,
-Aysnc 어노테이션을 지정한 메서드에 'void'를 달면 된다.
+   Aysnc 어노테이션을 지정한 메서드에 'void'를 달면 된다.
 
    비동기 메서드를 실행하게되면 처음에는 main 쓰레드로 실행되다
-task-1이라는  별도의 쓰레드로 실행시킨다.
-
-> task-1은 스프링부트에서 자동으로 만들어 제공하는 ThreadPoolTaskExecutor에 의해 동작한다.
-
-​      리턴타입이 void인 경우엔 executor.submit(task)를 실행하고 곧바로 return null이 실행된다.
+   task-1이라는  별도의 쓰레드로 실행시킨다.
+   
+   리턴타입이 void인 경우엔 executor.submit(task)를 실행하고 곧바로 return null이 실행된다.
+   
+   > task-1은 스프링부트에서 자동으로 만들어 제공하는 ThreadPoolTaskExecutor에 의해 동작한다.
 
  - ### Future Return
 
@@ -102,6 +102,7 @@ Blocking 현상이 발생한다.
    AsyncResult에서 제공하는 completable 메서드를 사용하면 CompletableFuture로 리턴할 수 있다.
 
    위와 마찬가지로 Future를 상속하고있으며 get메서드 역시 사용할 수 있다.
+   
    그러므로 get메서드를 사용하면 **일시적으로** 논블로킹처럼 보이게 되나,
    결국은 블로킹으로 처리되는 것을 알 수 있다.
    전체 과정을 non-blocking 으로 동작하게 하고 싶다면, 콜백함수를 사용해야한다.
@@ -110,7 +111,7 @@ Blocking 현상이 발생한다.
    
    (참고 : thenAccept말고 thenapply등 많은 메서드가 있다.)
    
-   ```
+   ```java
    CompletableFuture<Integer> future = coffeeService.get~~~("latte");
    log.info("non blocking 1 : ...");
    future.thenAccept(p -> log.info("latte's price: " + p));
@@ -118,7 +119,7 @@ Blocking 현상이 발생한다.
    ```
    
    메인스레드는 3번째 줄에 기재된 라떼의 가격이 도착하기 전에 다음 작업 (non blocking 1,2)를 수행하고,
-   
    늦게 결과가 나온 latte의 가격을 표시하게된다.
    
    
+
