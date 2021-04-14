@@ -2,9 +2,14 @@
 
 ### 작성중 😇
 
+
+
+[개인공부](study/readme.md)
+
 <br/>
-<br/>
-<br/>
+<br/><br/>
+
+***
 
 # 이화용(LeeHwayong)
 ## Contact :]
