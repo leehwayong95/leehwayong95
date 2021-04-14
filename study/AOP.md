@@ -26,3 +26,38 @@
 - 스프링 빈에만 AOP 적용 가능
 - 모든 AOP기능을 제공하는게 아닌, 스프링 **IoC**와 연동하여 엔터프라이즈 애플리케이션에서 가장흔한 문제
   (중복코드 등등)에 대한 해결책을 지원하는 것이 목적
+
+## 적용 방법
+
+### Dependency 적용
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-aop</artifactId>
+</dependency>
+```
+
+### 클래스에 @EnableAspectJAutoProxy 적용하기
+
+```java
+@EnableAspectJAutoProxy
+... class ...
+```
+
+### 공통기능을 정의하고 공통기능이 사용될 시점 정의
+
+```java
+@Aspect
+@Component
+public class ....
+```
+
+
+
+
+
+
+
+
+

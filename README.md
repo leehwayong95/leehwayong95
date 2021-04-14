@@ -52,6 +52,7 @@ Front-End, Back-End 모두 기능별로 맡아 2분과 함께 협업 진행하�
 
 2019 한이음 프로젝트로 만나게되어 
 3명이서 협업하여 프로젝트를 진행하였습니다.
+
 2019 한이음 경진대회에서 입상한 프로젝트입니다.
 
 팀 멤버 : [곽용준](https://github.com/yongJoon1638), [백유정](https://github.com/BAEKYUJEONG), [홍경표](https://github.com/kyungpyoda)
