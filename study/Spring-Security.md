@@ -4,6 +4,10 @@
 
 기본적인 세션관리, HTTP 보안, 어플리케이션 보안을 담당하고있다.
 
+## 구조
+
+![](./Security.png)
+
 ## 순서
 
 1.  Http Request 가 들어온다
@@ -67,3 +71,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 - Websecurity를 매개변수로 받는 configure method
 
   이미지, css, JavaScript파일을 접근 가능하게 처리하는 소스를 입력한다.
+
+- HttpSecurity를 매개변수로 받는 configure method
+
+  이 메소드에서 URL별 권한 설정, 로그인, 세션 등등 HTTP 보안 관련 설정을 해주면 된다.
+
+### UserDetailService 구현
+
+인증 구조중에서 5번에 해당하는 구간으로, UserDetailService를 implements 하여 
+LoadUserByUsername Method를 Override하여
+DB에서 아이디 값을 체크하면 완료된다.
+
+Return 값으로 인증구조 6번인 UserDetails를 반환하면 Spring Security의 구조는 끝이다.
+
