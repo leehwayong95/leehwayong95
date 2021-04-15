@@ -7,7 +7,8 @@
    - Annotation
       - ✔️[@Async](%40Async-Annotation.md)
 - [AOP](AOP.md)
-- ✔️[Spring Security](Spring-Security.md)
+- [Spring Security](Spring-Security.md)
+- [OAuth2](OAuth2)
 ## Vue.js
    - [JavaScript](JavaScript.md)
    - [HTML](HTML.md)

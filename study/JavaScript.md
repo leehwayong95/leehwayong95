@@ -1,1 +1,8 @@
-# 작성중:innocent:
+# :innocent:
+
+# JavaScript : Part1. Core JavaScript
+
+## JavaScript?
+
+
+

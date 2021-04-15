@@ -52,12 +52,18 @@
 @Component
 public class ....
 ```
+### 컴포넌트를 Bean에 등록한 class에 @Around 어노테이션을 통해 로깅시작
 
+```java
+@Aspect
+@Component
+public class ...{
+    @Around("execution>Service...")
+    public void .... (){
+        ...
+    }
+}
+```
 
-
-
-
-
-
-
-
+흐음... 조금 나중에 적용할 기회가 되었을 때 다시 공부하도록하자...
+조금은 어려운 단계..

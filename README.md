@@ -8,7 +8,7 @@
 
 # 이화용(LeeHwayong)
 ## Contact :]
- - Emailan
+ - Email
         dlghkdyd500@gmail.com
  - GitHub
         https://github.com/leehwayong95
