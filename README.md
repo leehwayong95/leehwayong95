@@ -26,8 +26,8 @@
 </table>
 
 # Language
- - Java
- - JavaScript
+ - Java (Spring Framework)
+ - JavaScript (Vue.js)
  - Arduino C
  - C++
  - Node.js
@@ -45,13 +45,17 @@ Front-End, Back-End 모두 기능별로 맡아 2분과 함께 협업 진행하�
 팀 멤버 : [성훈님](https://github.com/Seonghun-dytsun) [요한님](https://github.com/yohan-kang)
 
 #### 한이음 프로젝트 : 스마트 방석을 이용한 자세교정 디바이스
- - [RaspberryPi](https://github.com/haniumproject-smartcushion/raspberrypi)
- - [Arduino](https://github.com/haniumproject-smartcushion/cusionSensor)
- - [Android App]()
- - [Server]()
+ - RaspberryPi
+ - Arduino
+ - Android App
+ - Server : AWS EC2
 
-2019 한이음 프로젝트로 만나게되어 
-3명이서 협업하여 프로젝트를 진행하였습니다.
+2019 한이음 프로젝트로 만나게되어 3명이서 협업을 실시했습니다.
+
+위 장비들로 해당 프로젝트를 진행하였습니다.
+
+- 목표 : 스마트 방석에 입력된 압력 수치값을 전제로, 사용자의 자세를 판단하고 자세 가이드 앱 개발 실시
+- 역할 : 팀장, 통신모듈(RaspberryPi), AWS구성(Rest-API(Http), MQTT)
 
 2019 한이음 경진대회에서 입상한 프로젝트입니다.
 
