@@ -18,4 +18,4 @@
 
 ## 코딩테스트
 
-- ### [백준](codingTest/readme.md)
+- ### [백준](../codingTest/readme.md)
