@@ -33,7 +33,9 @@
  - Node.js
 
 # 💻Project
-#### 제주더큰내일센터 - 프로젝트형 인턴십 : 추천 장소 웹 프로젝트
+### 제주더큰내일센터 - 프로젝트형 인턴십 : 추천 장소 웹 프로젝트
+#### 기간 : 2021.01~2021.03
+
  - [Back-End (Spring)](https://github.com/leehwayong95/mobilpack_admin_service_Spring)
  - [UserClient (Vue.js)](https://github.com/leehwayong95/mobilpack_UserClient)
  - [AdminClient (Vue.js)](https://github.com/leehwayong95/mobilpack_admin_service_Vue)
@@ -41,6 +43,10 @@
  - [ERD Cloud](https://www.erdcloud.com/d/avikeHgaei4HNhADD)
 
 Front-End, Back-End 모두 기능별로 맡아 2분과 함께 협업 진행하였습니다.
+
+- 목표 : 관리자가 관광추천장소를 올리고, 사용자가 리스트를 보며 댓글과 평점을 달 수 있는 웹 프로젝트
+- 역할 : Git 형상관리, 사용자 클라이언트 기능구현, 관리자 클라이언트 기능구현, DB Table 설계 및 생성
+- 사용기술 : Spring Boot(Back-end), Vue.js(Front-end), AWS EC2(DB)
 
 팀 멤버 : [성훈님](https://github.com/Seonghun-dytsun) [요한님](https://github.com/yohan-kang)
 
@@ -56,6 +62,7 @@ Front-End, Back-End 모두 기능별로 맡아 2분과 함께 협업 진행하�
 
 - 목표 : 스마트 방석에 입력된 압력 수치값을 전제로, 사용자의 자세를 판단하고 자세 가이드 앱 개발 실시
 - 역할 : 팀장, 통신모듈(RaspberryPi), AWS구성(Rest-API(Http), MQTT)
+- 사용기술 : Node.js(Http, Mosquitto, Serialport)
 
 2019 한이음 경진대회에서 입상한 프로젝트입니다.
 
