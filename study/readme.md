@@ -1,14 +1,14 @@
 # 업무 배정 전 학습
 
-## Spring Boot          
+[✔️ : 작성완료] [✔ : 작업중]
 
-#####  [✔️ : 작성완료]
+## Spring Boot          
 
    - Annotation
       - ✔️[@Async](%40Async-Annotation.md)
-- [AOP](AOP.md)
-- [Spring Security](Spring-Security.md)
-- [OAuth2](OAuth2)
+- ✔️[AOP](AOP.md)
+- ✔️[Spring Security](Spring-Security.md)
+- ✔️[OAuth2](OAuth2)
 ## Vue.js
    - [JavaScript](JavaScript.md)
    - [HTML](HTML.md)
@@ -24,7 +24,7 @@
 
 # 연구과제 공부
 
-- ## <img src="https://miro.medium.com/max/600/1*yh90bW8jL4f8pOTZTvbzqw.png" width="150">[Go](go.md)
+- ## <img src="https://miro.medium.com/max/600/1*yh90bW8jL4f8pOTZTvbzqw.png" width="150">✔[Go](go.md)
 
 - ## <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1200px-Kubernetes_logo_without_workmark.svg.png" width="150">[K8s](k8s.md)
 
@@ -35,4 +35,6 @@
 - ## [MicroService Architecture](msa.md)
 
 - ## [DDD](DDD.md)
+
+- ## [ORM](ORM.md)
 
