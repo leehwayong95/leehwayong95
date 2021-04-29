@@ -107,7 +107,6 @@
 - for (feat. range)
 
   Go에서는 유일한 반복문이다.
-  
 ``` go
   for /*조건문*/ {
 	반복할 내용
@@ -126,7 +125,7 @@
 
   (C와...) 다른점이 하나 있다면 **`range`문**입니다.
 
-```go
+  ```go
   func CombinString (str ...string) total string {
     total = ""
       for _/* = index*/,eachstring := range str {
@@ -134,7 +133,7 @@
       }
       return //반환형에 변수명을 지정해 뒀다면, 꼭 반환형을 안적어도 된다.
   }
-```
+  ```
 
   이것은 `str`이라는 `string[]`변수를 받아 `for..each`문처럼 사용하는 반복문입니다.
 
@@ -270,6 +269,7 @@
      `min+1`번째 요소부터 `max`번째 까지 반환해준다.
   
     자주 쓸것같아 적는다.
+  
 - map
 
   우리가 항상 쓰던 HashMap과 같지만 조금 다르다고 한다. (니꼬왈)
@@ -295,12 +295,130 @@
 
 - struct
 
+  구조체다. 조금 다른 구조체다. 객체같으면서 object같으면서 구조체다.
+  
+  ``` go
+  package main
+  import "fmt"
+  type computer struct {
+      cpu string
+      ram int
+      hdd bool
+      ssd bool
+      storage int
+  }
+  
+  func main () {
+      // 아래와 같이 적을 수도있습니다만,
+      // myCom := computer{"i5", 16, false, true, 256+512}
+      // 이게 더 시각적으로 보기에 편합니다.
+      myCom := computer{cpu: "i5", ram: 16, hdd: false, ssd: true, storage: 256+512}
+      fmt.Println(myCom)
+      // result > {i5 16 false true 768} //
+  }
+  ```
+  
+  여기에서 추가적으로 struct에 메서드를 추가할 수 있습니다.
+  
+  ``` go
+  // 위에서 이어집니다.
+  	//👇이 부분이 구조체를 참조한다는 **receiver** 입니다.
+  func (c computer) AddStorage (storage int) {
+      c.storage += storage
+  }
+  ```
+  ```go
+  func main () {
+  	myCom := computer{cpu: "i5", ram: 16, hdd: false, ssd: true, storage: 256+512}
+  	myCom.AddStorage(256)
+  	fmt.Println(myCom)
+      // result > {i5 16 false true 768}
+  }
+  ```
+  
+  여기서 참조해야할 것은 `receiver`부분인 `(c computer)`부분입니다.
+  
+  이름은 마음대로 해도 되지만, 구조체의 첫번째 글자의 소문자로 규약되어있습니다.
+  
+  하지만 이 함수는 `computer`를 ***새로 만들어 복사합니다***(Call by value)
+  
+  그래서 결과가 함수를 실행해도 달라지지 않습니다.
+  
+  하지만 해당 호출한 구조체에서 실행하게끔 만들어주려면
+  포인터로 `receiver`를 지정하여 주소를 참조하게 해줍시다.(Call by reference)
+  
+  ```go
+  //위 함수를 수정합니다.
+  	//👇이 부분의 `*`이 추가됩니다.
+  func (c *computer) AddStorage (storage int) {
+      c.storage += storage
+  }
+  //main문 동일
+  //result > {i5 16 false true 1024}
+  ```
+  
+  결과 값이 달라진것을 확인할 수 있습니다.
+  
+  - 접근자
+  
+    또, 주의할점이 한가지있다.
+  
+    이렇게 export (따로 적진 않았지만, 다른곳에서 impor)한다면,
+    첫 글자가 대문자가 아닐 시, **외부에서 접근하지 못하게됩니다.**
+  
+    함수, 변수, 구조체 모두 마찬가지입니다.
+  
+    ``` go
+    package computer
+    
+    type computer struct //'c'omputer 이므로 private 형식으로 간주됩니다.
+    type Computer struct //'C'omputer이므로 외부에서 확인할 수 있습니다.
+    ```
+  
+    
+  
+    ```go
+    package main
+    
+    import "github.com/..../computer" //대략적으로 적었습니다.
+    
+    func main {
+        yourComputer := computer.computer{} //접근 불가
+        myComputer := computer.Computer{} //요런식으로 접근하게됩니다.
+    }
+    ```
+  
+    이런식으로 첫글자가 대문자여야 public 처럼 사용하게됩니다.
+  
+    읽기는 힘들지만, 이러한 규칙으로 접근자를 지정합니다.
+  
+  - 자동 호출 메서드
+  
+    Go는 해당 `struct`를 호출(출력)하게되면 (예 : `fmt.println(myComputer))`)어떻게 될까?
+  
+    당연하게 그냥 출력된다 (예 : `&{i5 16 ....(중략)})`)
+  
+    이럴때, 내가 원하는걸 출력하게 하고싶다면, 해당 구조체에 `String()`함수를 선언하여 구현하자.
+  
+    그럼 내부에서 자동으로 `String()`함수를 호출하여 반환할 것이다.
+  
+  - `type Computer map[string]string`
+  
+    위 선언은 어떻게 될까?
+  
+    단순히 `alias`(별칭)역할이다. map으로 동작하는 Computer를 하나의 별칭으로 사용하게 되는 것이다.
+  
+    그러므로 `mycom := Computer{}`로 지정하여 `map`으로 작동하는 `mycom`이 생성된다.
+  
+    그러므로 `mycom["cpu"] = "i7"` 가 가능해진다.
+  
   
 
 ***
 
   
 
-
 # :innocent:이 문서는 현재 작성 중입니다. 
+
+~~거슬리시겠지만 저도 왜 계속 적는 말투가 바뀌는지 모르겠습니다 :innocent:~~
 
