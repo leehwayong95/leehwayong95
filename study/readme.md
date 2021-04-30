@@ -24,7 +24,7 @@
 
 # 연구과제 공부
 
-- ## <img src="https://miro.medium.com/max/600/1*yh90bW8jL4f8pOTZTvbzqw.png" width="150">✔[Go](go.md)
+- ## <img src="https://miro.medium.com/max/600/1*yh90bW8jL4f8pOTZTvbzqw.png" width="150">✔️[Go](go.md)
 
 - ## <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1200px-Kubernetes_logo_without_workmark.svg.png" width="150">[K8s](k8s.md)
 
