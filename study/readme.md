@@ -30,6 +30,8 @@
 
 - ## <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1200px-Kubernetes_logo_without_workmark.svg.png" width="150">:pencil:[Kubernetes](k8s.md)
 
+- ## <img src="https://media.vlpt.us/images/jbb9229/post/226b55e4-efa7-4601-9c1f-580ca8e46a63/1100px_Redis_Logo_01.png" width="150">[REDIS](redis.md)
+
 - ### <img src="https://www.earlysoft.co.kr/wp-content/uploads/2019/05/fcm.jpg" width="150">[FCM](fmc.md)
 
 - ## <img src="https://blog.kakaocdn.net/dn/dygYqS/btqAGb0f2hT/ZvrsYAkqacHgpkBilkiAYk/img.png" width="150">[Docker](docker.md)
