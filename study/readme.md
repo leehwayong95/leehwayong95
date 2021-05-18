@@ -34,11 +34,13 @@
 
 - ## <img src="https://www.earlysoft.co.kr/wp-content/uploads/2019/05/fcm.jpg" width="150">:pencil:[FCM](fcm.md)
 
-- ##  <img src="https://ichi.pro/assets/images/max/640/0*gRZh5dHFWz-nFu7Z.png" width="150">:pencil:[Netflix Hystrix](hystrix.md)
+- ##  <img src="https://ichi.pro/assets/images/max/640/0*gRZh5dHFWz-nFu7Z.png" width="150">✔️[Netflix Hystrix](hystrix.md)
 
 - ## <img src="https://blog.kakaocdn.net/dn/dygYqS/btqAGb0f2hT/ZvrsYAkqacHgpkBilkiAYk/img.png" width="150">[Docker](docker.md)
 
 - ## <img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbFEsv1%2FbtqPAtFgvAk%2FcIfbmNEZsxRKx8EYlw4XY0%2Fimg.png"  width="150">[Jenkins](jenkins.md)
+
+- ## <img src="https://lh3.googleusercontent.com/proxy/XcfBsYcq_uoWfC8Gkzht2U2bWQqccZ2465tUoGK96Gc9Dzf2Qq9IwhShaXRn3LRldKjRbSnZxYGY2GAmGaRMcTg"  width="150"> [JPA](jpa.md)
 
 - ## [MicroService Architecture](msa.md)
 
