@@ -141,4 +141,30 @@ CircuitBreaker로 Circuit을 Open(회로 개방)한다.
 
     나는 Spring boot 2.3.8로 Downgrade를 진행했기 때문에, profiles의 이름을 인식하지 못하여, 문서의 마지막 DB정보를 가져오게 되었다.
 
+- 설정 파일의 `timeoutInMilliseconds`가 반영이 되지 않음.
+
+  `RestTemplate`을 이용한 Request시, `timeoutInMilliseconds`을 10000ms (10s)로 설정해두고 응답을 기다렸을때, 2000ms 이내로 응답이 fallback했다.
+
+  어노테이션을 달아 `timeoutInMilliseconds`을 지정해도, 마찬가지 문제가 발생했다.
+
+  - 원인
+
+    1. `RestTemplate`의 기본 Timeout 시간이 2s 으로 지정되어있거나,
+    2. Spring Profiles 적용으로 인한 application.yml의 depth가 `spring:`  하위 depth로 지정해놓아서 인식못함.
+
+    둘 중 하나였다.
+
+  - 해결방안
+
+    1. `ResTemplate` 제거
+
+       우선 `RestTemplate`을 사용하지 않았다. 대신 `WebClient`를 사용하여 객체를 생성했고, 이를 이용하여 `Exchage()`했다
+       처음에는 TimeOut되지않고 메서드에 직접 등록한 500000ms이내로 들어와 잘 지정되었다.
+
+       하지만 메서드에 직접 등록된 `TimeoutInMilliseconds`를 제거하니, 바로 기본값으로 돌아왔다.
+
+       `application.yml`에 등록된 숫자로 500000ms 를 넣어주니, 계속 2000ms 정도만 지나면 `fallback`메서드로 떨궜다.
+
+    2. 해결중....
+
     
