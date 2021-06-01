@@ -50,5 +50,7 @@
 
 ## 빠르게 시작해보기!
 
-# :innocent: 앱 제작중이라 나중에 작성하겠습니다 
+# :innocent: 앱 제작은 완료하였으나, 글작성이 늦어집니다ㅠㅠ
+
+- ### [예제 앱 링크(안드로이드)](https://github.com/leehwayong95/PushExample_Android)
 
