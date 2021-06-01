@@ -115,6 +115,38 @@
 
   보통 ELK(**E**lasticsearch + **L**ogstash + **K**ibana)를 많이 사용한다.
 
+## 겪은 문제
+
+- zuul을 이용한 프로젝트에서 모든 Request가 됐다 안됐다 하는 현상(404 or 정상 작동)이 있었다.
+
+  - 원인 : Kube.yml을 잘못 작성하여 내 pod가 zuul pod이 붙어있는 service에 붙어 gate-way service에 두개의 pod가 붙어있었다.
+
+    원인을 알게 된 것은 `kubectl get service`를 했고, 
+
+    해당 서비스를 `kubectl get service [서비스이름]`조회하여 서비스 이름을 조회하고,
+
+    `kubectl describe service [서비스이름]`으로 describe를 확인하여 붙어있는 pod들의 ip를 확인할 수 있었다.
+
+    이로 인해 service가 RoundRobin으로 제공되어 서비스가 제공됐다 안됐다 하는 현상을 확인할 수 있었다.
+
+  - 해결 
+
+    개발환경은 젠킨스와 harbor를 이용한 자동배포를 이용하고 있으므로,
+
+    pod을 재 배포 한다 하더라도, 기존 kube.yml을 참조하고 pod을 생성했으므로, 설정이 바뀌지 않는다.
+
+    강제적으로 img를 삭제하고 다시 올려도 `imgpullbackOff`로 전환이 되는 것을 확인했다.
+
+    그래서 Deployment를 삭제하고 다시 재 배포를 진행하였다.
+
+    `kubectl get deployments` : Deploy 조회
+
+    `kubectl delete deployment [deployment 이름]` : Deploy 삭제
+
+    > (필자는 여기서 젠킨스를 재 배포 진행하였으나, 수동으로 적용시 아래 명령어를 입력하면 될듯하다.)
+
+    `kubectl apply -f [kube.yml 파일의 위치 경로]` : 재 배포 적용
+
 
 
 # :pencil: 작성 중입니다. :innocent:
